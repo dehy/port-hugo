@@ -5,7 +5,7 @@ jQuery(document).ready(function($){
 		revealDuration = 500,
 		revealAnimationDelay = 1500;
 	
-	initHeadline();
+	//initHeadline();
 	
 
 	function initHeadline() {

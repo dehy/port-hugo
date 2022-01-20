@@ -623,12 +623,12 @@ label {
 }
 .desktop-menu-logo {
   img {
-    height: 50px;
+    height: 160px;
     margin-left: 20px;
   }
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: top;
   position: absolute;
   left: 1px;
 }
@@ -1241,7 +1241,7 @@ ul.experience-chart {
   .header {
     .logo {
       img {
-        width: 185px;
+        width: 300px;
       }
     }
   }
