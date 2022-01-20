@@ -33,6 +33,19 @@
 /*--------------------------------
   End Header
 ----------------------------------*/
+/*------
+    Pusle
+-------*/
+@keyframes pulse {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); }
+  50% {
+    -webkit-transform: translate(0, 10px);
+            transform: translate(0, 10px); }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
 /*--------------------------------
   Start Menu
 ----------------------------------*/
@@ -199,6 +212,36 @@ p code {
     border-radius: 100%;
     border: 2px solid #999;
   }
+}
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  width: 28px;
+  margin: auto;
+  display: block;
+  //cursor: pointer;
+  //padding-bottom: 40px;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+.chevron::before {
+  border-style: solid;
+  border-width: 5px 5px 0 0;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  transform: rotate(135deg);
+  vertical-align: top;
+  width: 20px;
+}
+.chevron {
+  //margin-top: 20px;
+  display: block;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  color: #FFFFFF;
 }
 .header {
   background: #313131;
