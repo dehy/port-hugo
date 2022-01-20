@@ -21,7 +21,7 @@
           <p>{{ .content | markdownify | emojify }}</p>
           {{ if .button.enable }} {{ with .button }}
           <a
-            href="{{ .link | relURL }}"
+            href="{{ .link }}"
             target="_blank"
             rel="noreferrer"
             class="button download-cv"
